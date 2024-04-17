@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "d30db180-667c-4077-81fe-7204aac0838e",
+		"name": "orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34327131"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerId\": 1,\r\n  \"orderDate\": \"2024-04-07\",\r\n  \"status\": \"Pending\",\r\n  \"totalAmount\": 599.99,\r\n  \"product\": {\r\n    \"productId\": 1,\r\n    \"quantity\": 2\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerId\": 2,\r\n  \"orderDate\": \"2024-04-07\",\r\n  \"status\": \"Pending\",\r\n  \"totalAmount\": 599.99,\r\n  \"product\": {\r\n    \"productId\": 2\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 111,\r\n    \"orderDate\": \"2024-04-08T10:00:00Z\",\r\n    \"status\": \"Pending\",\r\n    \"totalAmount\": 599.99\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders/6",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 111,\r\n    \"orderDate\": \"2024-04-08T10:00:00Z\",\r\n    \"status\": \"reseved\",\r\n    \"totalAmount\": 599.99\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
